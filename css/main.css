@@ -185,8 +185,10 @@ img {
   border: none;
   padding: 6px 22px;
   border-radius: 4px;
-  -webkit-transition: var(--hover-anim);
-  transition: var(--hover-anim);
+  -webkit-transition: background-color var(--hover-anim), color var(--hover-anim), -webkit-box-shadow var(--hover-anim);
+  transition: background-color var(--hover-anim), color var(--hover-anim), -webkit-box-shadow var(--hover-anim);
+  transition: background-color var(--hover-anim), color var(--hover-anim), box-shadow var(--hover-anim);
+  transition: background-color var(--hover-anim), color var(--hover-anim), box-shadow var(--hover-anim), -webkit-box-shadow var(--hover-anim);
   outline: transparent;
 }
 
