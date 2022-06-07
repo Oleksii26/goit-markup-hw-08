@@ -1,10 +1,10 @@
-.footer-address {
+.footer__list {
   list-style: none;
   font-style: normal;
   margin-top: 20px;
 }
 
-.list-1 {
+.footer__item {
   font-family: var(--main-font);
   font-style: normal;
   font-size: 14px;
@@ -19,7 +19,7 @@
     color: var(--accent-color);
   }
 }
-.list-2 {
+.footer__item-two {
   font-family: var(--main-font);
   font-style: normal;
   font-size: 14px;
@@ -38,17 +38,15 @@
 .footer {
   background-color: var(--accent-bg-color);
 }
-.footer-logo {
+.footer__logo-white {
   color: var(--main-bg-cl);
 }
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.logo-footer {
-  margin-right: 0;
-}
-.footer-items {
+
+.footer__link {
   margin-bottom: 9px;
 
   &:last-child {
@@ -56,10 +54,10 @@
   }
 }
 
-.footer-social {
+.footer__social {
   margin-right: auto;
 }
-.text-footer {
+.footer__text {
   color: var(--main-bg-cl);
   font-family: 'Roboto';
   font-weight: 700;
@@ -69,26 +67,26 @@
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.footer-contacts {
+.footer__contacts {
   margin-right: 70px;
 }
-.section-footer {
+.footer__section {
   display: flex;
   align-items: baseline;
 }
 
-.social {
+.footer__social-list {
   display: flex;
 }
-.social-items:not(:last-child) {
+.footer__social-link:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icon {
+.footer__icon {
   fill: var(--main-bg-cl);
 }
 
-.input-footer {
+.footer__input {
   color: var(--main-bg-cl);
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -102,10 +100,10 @@
   padding-left: 16px;
 }
 
-.footer-form {
+.footer__form {
   display: flex;
 }
-.icon-send {
+.footer__icon-send {
   margin-left: 10px;
   fill: currentColor;
 }

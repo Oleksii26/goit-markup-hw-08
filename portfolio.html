@@ -22,34 +22,36 @@
     <link rel="stylesheet" type="text/css" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header header-portfolio">
+    <header class="header__portfolio">
       <div class="container header">
-        <a href="index.html" lang="en" class="logo">Web<span class="logo-studio">Studio</span></a>
-        <nav class="navigation">
-          <ul class="list-header list">
-            <li class="navigation-item">
-              <a href="index.html" class="link">Студия</a>
+        <a href="index.html" lang="en" class="header__logo logo--blue"
+          >Web<span class="header__logo-studio">Studio</span></a
+        >
+        <nav class="header__navigation">
+          <ul class="header__list list">
+            <li class="header__item">
+              <a href="index.html" class="header__link link--style">Студия</a>
             </li>
-            <li class="navigation-item">
-              <a href="./portfolio.html" class="page link">Портфолио</a>
+            <li class="header__item">
+              <a href="./portfolio.html" class="header__link page--after link--style">Портфолио</a>
             </li>
-            <li class="navigation-item">
-              <a href="Контакты" class="link">Контакты</a>
+            <li class="header__item">
+              <a href="Контакты" class="header__link link--style">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list-contacts list">
-          <li class="navigation-item">
-            <a href="mailto:info@devstudio.com" class="link">
-              <svg class="header-icon" width="16" height="12">
+        <ul class="header__contacts list">
+          <li class="header__item">
+            <a href="mailto:info@devstudio.com" class="header__phone link--style">
+              <svg class="header__icon" width="16" height="12">
                 <use href="./img/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="navigation-item">
-            <a href="tel:+380961111111" class="link">
-              <svg class="header-icon" width="10" height="16">
+          <li class="header__item">
+            <a href="tel:+380961111111" class="header__email link--style">
+              <svg class="header__icon" width="10" height="16">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -60,205 +62,205 @@
     </header>
     <main>
       <section class="section">
-        <div class="container btn-container">
+        <div class="container catalog">
           <h1 class="visually-hidden">Каталог</h1>
-          <ul class="btn-list list">
-            <li class="item-btn">
-              <button type="button" class="btn-page-two">Все</button>
+          <ul class="catalog__list list">
+            <li class="catalog__link">
+              <button type="button" class="catalog__btn">Все</button>
             </li>
-            <li class="item-btn">
-              <button type="button" class="btn-page-two">Приложения</button>
+            <li class="catalog__link">
+              <button type="button" class="catalog__btn">Приложения</button>
             </li>
-            <li class="item-btn">
-              <button type="button" class="btn-page-two">Веб-сайты</button>
+            <li class="catalog__link">
+              <button type="button" class="catalog__btn">Веб-сайты</button>
             </li>
-            <li class="item-btn">
-              <button type="button" class="btn-page-two">Дизайн</button>
+            <li class="catalog__link">
+              <button type="button" class="catalog__btn">Дизайн</button>
             </li>
-            <li class="item-btn">
-              <button type="button" class="btn-page-two">Маркетин</button>
+            <li class="catalog__link">
+              <button type="button" class="catalog__btn">Маркетин</button>
             </li>
           </ul>
-          <ul class="catalog list">
-            <li class="catalog-items">
-              <a href="" class="link-icon">
-                <div class="catalog-card-one">
+          <ul class="catalog__img-list list">
+            <li class="catalog__img-link">
+              <a href="" class="catalog__icon">
+                <div class="catalog__card-one">
                   <img src="./img/cards/nootebook.jpg" alt="ноутбук" width="370" height="294" />
-                  <div class="catalog-card-two">
-                    <p class="description">
+                  <div class="catalog__card-two">
+                    <p class="catalog__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="img-catalog">
+                <div class="catalog__img">
                   <h2>Технокряк</h2>
-                  <p class="sacodary-text">Вебсайт</p>
+                  <p class="catalog__text">Вебсайт</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-items">
-              <a href="" class="link-icon">
-                <div class="catalog-card-one">
+            <li class="catalog__img-link">
+              <a href="" class="catalog__icon">
+                <div class="catalog__card-one">
                   <img src="./img/cards/bsket.jpg" alt="баскетбол" width="370" height="294" />
-                  <div class="catalog-card-two">
-                    <p class="description">
+                  <div class="catalog__card-two">
+                    <p class="catalog__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="img-catalog">
+                <div class="catalog__img">
                   <h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
-                  <p class="sacodary-text">Дизайн</p>
+                  <p class="catalog__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-items">
-              <a href="" class="link-icon">
-                <div class="catalog-card-one">
+            <li class="catalog__img-link">
+              <a href="" class="catalog__icon">
+                <div class="catalog__card-one">
                   <img
                     src="./img/cards/seafood.jpg"
                     alt="логоти ресторана"
                     width="370"
                     height="294"
                   />
-                  <div class="catalog-card-two">
-                    <p class="description">
+                  <div class="catalog__card-two">
+                    <p class="catalog__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="img-catalog">
+                <div class="catalog__img">
                   <h2>Ресторан <span lang="en">Seafood</span></h2>
-                  <p class="sacodary-text">Приложение</p>
+                  <p class="catalog__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-items">
-              <a href="" class="link-icon">
-                <div class="catalog-card-one">
+            <li class="catalog__img-link">
+              <a href="" class="catalog__icon">
+                <div class="catalog__card-one">
                   <img
                     src="./img/cards/headphones.jpg"
                     alt="черные наушники"
                     width="370"
                     height="294"
                   />
-                  <div class="catalog-card-two">
-                    <p class="description">
+                  <div class="catalog__card-two">
+                    <p class="catalog__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="img-catalog">
+                <div class="catalog__img">
                   <h2>Проект <span lang="en">Prime</span></h2>
-                  <p class="sacodary-text">Маркетинг</p>
+                  <p class="catalog__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-items">
-              <a href="" class="link-icon">
-                <div class="catalog-card-one">
+            <li class="catalog__img-link">
+              <a href="" class="catalog__icon">
+                <div class="catalog__card-one">
                   <img
                     src="./img/cards/two-boxes.jpg"
                     alt="две картонные коробки"
                     width="370"
                     height="294"
                   />
-                  <div class="catalog-card-two">
-                    <p class="description">
+                  <div class="catalog__card-two">
+                    <p class="catalog__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="img-catalog">
+                <div class="catalog__img">
                   <h2>Проект <span lang="en">Boxes</span></h2>
-                  <p class="sacodary-text">Приложение</p>
+                  <p class="catalog__text">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-items">
-              <a href="" class="link-icon">
-                <div class="catalog-card-one">
+            <li class="catalog__img-link">
+              <a href="" class="catalog__icon">
+                <div class="catalog__card-one">
                   <img src="./img/cards/monitor.jpg" alt="монитор" width="370" height="294" />
-                  <div class="catalog-card-two">
-                    <p class="description">
+                  <div class="catalog__card-two">
+                    <p class="catalog__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="img-catalog">
+                <div class="catalog__img">
                   <h2 lang="en">Inspiration has no Borders</h2>
-                  <p class="sacodary-text">Вебсайт</p>
+                  <p class="catalog__text">Вебсайт</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-items">
-              <a href="" class="link-icon">
-                <div class="catalog-card-one">
+            <li class="catalog__img-link">
+              <a href="" class="catalog__icon">
+                <div class="catalog__card-one">
                   <img src="./img/cards/book.jpg" alt="книга" width="370" height="294" />
-                  <div class="catalog-card-two">
-                    <p class="description">
+                  <div class="catalog__card-two">
+                    <p class="catalog__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="img-catalog">
+                <div class="catalog__img">
                   <h2>Издание <span lang="en">Limited Edition</span></h2>
-                  <p class="sacodary-text">Дизайн</p>
+                  <p class="catalog__text">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-items">
-              <a href="" class="link-icon">
-                <div class="catalog-card-one">
+            <li class="catalog__img-link">
+              <a href="" class="catalog__icon">
+                <div class="catalog__card-one">
                   <img src="./img/cards/label.jpg" alt="бирка" width="370" height="294" />
-                  <div class="catalog-card-two">
-                    <p class="description">
+                  <div class="catalog__card-two">
+                    <p class="catalog__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="img-catalog">
+                <div class="catalog__img">
                   <h2>Проект <span lang="en">LAB</span></h2>
-                  <p class="sacodary-text">Маркетинг</p>
+                  <p class="catalog__text">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="catalog-items">
-              <a href="" class="link-icon">
-                <div class="catalog-card-one">
+            <li class="catalog__img-link">
+              <a href="" class="catalog__icon">
+                <div class="catalog__card-one">
                   <img
                     src="./img/cards/nootebook-2.jpg"
                     alt="серый ноутбук"
                     width="370"
                     height="294"
                   />
-                  <div class="catalog-card-two">
-                    <p class="description">
+                  <div class="catalog__card-two">
+                    <p class="catalog__description">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
                       сервисов. Все это позволит посетителю получить исчерпывающие сведения о
                       компании или частном лице.
                     </p>
                   </div>
                 </div>
-                <div class="img-catalog">
+                <div class="catalog__img">
                   <h2 lang="en">Growing Business</h2>
-                  <p class="sacodary-text">Приложение</p>
+                  <p class="catalog__text">Приложение</p>
                 </div>
               </a>
             </li>
@@ -267,82 +269,82 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="section-footer container">
-        <div class="footer-contacts">
-          <a href="index.html" lang="en" class="logo logo-footer"
-            >Web<span class="footer-logo">Studio</span></a
+      <section class="footer__section container">
+        <div class="footer__contacts">
+          <a href="index.html" lang="en" class="logo--blue"
+            >Web<span class="footer__logo-white">Studio</span></a
           >
           <address>
-            <ul class="footer-address list">
-              <li class="footer-items">
+            <ul class="footer__list list">
+              <li class="footer__link">
                 <a
                   href="https://goo.gl/maps/iHPk22q8Q6fAZVJF9"
                   target="_blank"
                   rel="noopener nofollow"
-                  class="list-1"
+                  class="footer__item"
                   >г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="footer-items">
-                <a href="mailto:info@devstudio.com" class="list-2">info@devstudio.com</a>
+              <li class="footer__link">
+                <a href="mailto:info@devstudio.com" class="footer__item-two">info@devstudio.com</a>
               </li>
-              <li class="footer-items">
-                <a href="tel:+380961111111" class="list-2">+38 096 111 11 11</a>
+              <li class="footer__link">
+                <a href="tel:+380961111111" class="footer__item-two">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <h4 class="text-footer">ПРИСОЕДИНЯЙТЕСЬ</h4>
-          <ul class="social list">
-            <li class="social-items">
+        <div class="footer__social">
+          <p class="footer__text">ПРИСОЕДИНЯЙТЕСЬ</p>
+          <ul class="footer__social-list list">
+            <li class="footer__social-link">
               <a
-                class="social-link"
+                class="footer__social-logo"
                 href=""
                 target="_blank"
                 aria-label="instagram"
                 rel="noopener noreferrent"
               >
-                <svg class="social-icon" width="20" height="20">
+                <svg class="footer__icon" width="20" height="20">
                   <use href="./img/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-items">
+            <li class="footer__social-link">
               <a
-                class="social-link"
+                class="footer__social-logo"
                 href=""
                 target="_blank"
                 aria-label="twitter"
                 rel="noopener noreferrent"
               >
-                <svg class="social-icon" width="20" height="20">
+                <svg class="footer__icon" width="20" height="20">
                   <use href="./img/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-items">
+            <li class="footer__social-link">
               <a
-                class="social-link"
+                class="footer__social-logo"
                 href=""
                 target="_blank"
                 aria-label="facebook"
                 rel="noopener noreferrent"
               >
-                <svg class="social-icon" width="20" height="20">
+                <svg class="footer__icon" width="20" height="20">
                   <use href="./img/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-items">
+            <li class="footer__social-link">
               <a
-                class="social-link"
+                class="footer__social-logo"
                 href=""
                 target="_blank"
                 aria-label="linkedin"
                 rel="noopener noreferrent"
               >
-                <svg class="social-icon" width="20" height="20">
+                <svg class="footer__icon" width="20" height="20">
                   <use href="./img/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -350,12 +352,12 @@
           </ul>
         </div>
         <div>
-          <p class="text-footer">Подпишитесь на рассылку</p>
-          <form class="footer-form" name="footer-form">
-            <input class="input-footer" type="text" name="E-mail" placeholder="E-mail" />
-            <button class="footer-btn" type="submit">
+          <p class="footer__text">Подпишитесь на рассылку</p>
+          <form class="footer__form" name="footer-form">
+            <input class="footer__input" type="text" name="e-mail" placeholder="E-mail" />
+            <button class="footer__btn" type="submit">
               Подписаться
-              <svg class="icon-send" width="24" height="24">
+              <svg class="footer__icon-send" width="24" height="24">
                 <use href="./img/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -363,5 +365,8 @@
         </div>
       </section>
     </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>
   </body>
 </html>

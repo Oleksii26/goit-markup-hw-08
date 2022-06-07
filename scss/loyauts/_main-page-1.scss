@@ -1,4 +1,4 @@
-.section-hero {
+.hero {
   max-width: 1600px;
   height: 600px;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
   margin-right: auto;
 }
 
-.hero {
+.hero__title {
   color: var(--main-bg-cl);
   font-family: var(--main-font);
   font-style: normal;
@@ -72,7 +72,7 @@
   }
 }
 
-.our-team__title {
+.about__title {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -110,17 +110,18 @@
 .about {
   padding-top: 0;
 }
-.about .list {
+.about__list {
   display: flex;
 }
-.our-work-item {
+.about__item {
   position: relative;
   margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
-.about .our-work-item:last-child {
-  margin-right: 0;
-}
-.our-work-text {
+
+.about__text {
   position: absolute;
   content: '';
   display: flex;
@@ -175,14 +176,14 @@
   fill: var(--clients-color);
 }
 
-.clients-list {
+.clients__list {
   display: flex;
 }
-.clients-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-name {
+.client__name {
   color: var(--clients-color);
   width: 170px;
   height: 92px;
@@ -198,12 +199,12 @@
   &:focus {
     border-color: var(--accent-color);
   }
-  &:hover .clients,
-  &:focus .clients {
+  &:hover .clients__icon,
+  &:focus .clients__icon {
     fill: var(--accent-color);
   }
 }
-.clients {
+.clients__icon {
   transition: var(--hover-anim);
   fill: currentColor;
 }

@@ -1,22 +1,19 @@
-.btn-list {
+.catalog__list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
+  /* width: 1200px;
+  height: 1360px; */
 }
 
-.btn-container {
-  width: 1200px;
-  height: 1360px;
-}
-
-.catalog {
+.catalog__img-list {
   display: flex;
   flex-wrap: wrap;
 }
-.catalog h2 {
+.catalog__img-list h2 {
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -25,7 +22,7 @@
   color: var(--secondary-text-cl);
   letter-spacing: 0.06em;
 }
-.sacodary-text {
+.catalog__text {
   font-family: var(--main-font);
   font-style: normal;
   font-size: 16px;
@@ -33,7 +30,7 @@
   color: var(--main-text-cl);
   letter-spacing: 0.03em;
 }
-.catalog-items {
+.catalog__img-link {
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -45,7 +42,7 @@
   }
 }
 
-.description {
+.catalog__description {
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.56;
@@ -53,11 +50,11 @@
   background-color: var(--color-description);
   color: var(--main-bg-cl);
 }
-.catalog-card-one {
+.catalog__card-one {
   position: relative;
   overflow: hidden;
 }
-.catalog-card-two {
+.catalog__card-two {
   top: 0;
   left: 0;
   position: absolute;
@@ -66,25 +63,26 @@
   width: 100%;
   height: 100%;
 }
-.link-icon {
+.catalog__icon {
   text-decoration: none;
   display: block;
   transition: box-shadow var(--hover-anim);
+  outline: transparent;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
-  &:hover .catalog-card-two,
-  &:focus .catalog-card-two {
+  &:hover .catalog__card-two,
+  &:focus .catalog__card-two {
     transform: translateY(0%);
   }
 }
 
-.img-catalog h2 {
+.catalog__img h2 {
   margin-bottom: 4px;
 }
-.img-catalog {
+.catalog__img {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
