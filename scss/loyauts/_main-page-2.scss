@@ -1,3 +1,7 @@
+.catalog {
+  width: 1200px;
+  height: 1360px;
+}
 .catalog__list {
   list-style: none;
   margin: 0;
@@ -5,8 +9,6 @@
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  /* width: 1200px;
-  height: 1360px; */
 }
 
 .catalog__img-list {
