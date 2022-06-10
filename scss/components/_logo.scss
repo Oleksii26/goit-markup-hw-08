@@ -1,11 +1,21 @@
 .logo--blue {
   font-family: var(--sekondary-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
   letter-spacing: 0.03em;
-  margin-right: 93px;
+
+  @include mq(tablet-only) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include mq(not-desktop) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @include mq(desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
