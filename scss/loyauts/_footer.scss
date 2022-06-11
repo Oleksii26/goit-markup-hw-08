@@ -3,7 +3,6 @@
 }
 .footer__adress {
   @include mq(tablet-only) {
-    margin-left: 26px;
   }
 }
 .footer__list {
@@ -99,6 +98,10 @@
   }
 
   @include mq(tablet-only) {
+    display: flex;
+    margin-left: 76px;
+    align-items: center;
+    flex-direction: column;
   }
   @include mq(desktop) {
     margin-right: 70px;

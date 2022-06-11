@@ -47,7 +47,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="header__item">
+          <li class="header__contact">
             <a href="tel:+380961111111" class="header__phone link--style">
               <svg class="header__icon" width="10" height="16">
                 <use href="./img/icons.svg#icon-smartphone"></use>
@@ -57,11 +57,81 @@
           </li>
         </ul>
       </nav>
-      <a class="header__menu-link" href="">
-        <svg class="header__menu" width="24" height="16">
-          <use href="./img/icons.svg#_menu_24px"></use>
+      <button
+        type="button"
+        class="header__menu-link is-open"
+        aria-controls="menu-open"
+        aria-expanded="false"
+        data-menu-button
+      >
+        <svg class="header__menu" width="24" height="16" aria-label="Мобильное меню">
+          <use class="icon_close" href="./img/icons.svg#icon-close"></use>
+          <use class="icon_menu" href="./img/icons.svg#_menu_24px"></use>
         </svg>
-      </a>
+      </button>
+      <div class="header__menu-mobile" id="menu-open" data-menu>
+        <ul class="mobile_list-navigation list">
+          <li class="mobile_link-navigation">
+            <a class="mobile_item-navigation mobile_page" href="./index.html">Студия</a>
+          </li>
+          <li class="mobile_link-navigation">
+            <a class="mobile_item-navigation" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mobile_link-navigation">
+            <a class="mobile_item-navigation" href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mobile_list-contact list">
+          <li class="mobile_link-contact">
+            <a class="mobile_item-tel" href="tel:+380361111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mobile_link-contact">
+            <a class="mobile_item-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mobile_list-social list">
+          <li class="mobile_link-social">
+            <a
+              class="mobile__social"
+              href=""
+              target="_blank"
+              aria-label="instagram"
+              rel="noopener noreferrent"
+              >Instagram</a
+            >
+          </li>
+          <li class="mobile_link-social">
+            <a
+              class="mobile__social"
+              href=""
+              target="_blank"
+              aria-label="Twitter"
+              rel="noopener noreferrent"
+              >Twitter</a
+            >
+          </li>
+          <li class="mobile_link-social">
+            <a
+              class="mobile__social"
+              href=""
+              target="_blank"
+              aria-label="Facebook"
+              rel="noopener noreferrent"
+              >Facebook</a
+            >
+          </li>
+          <li class="mobile_link-social">
+            <a
+              class="mobile__social"
+              href=""
+              target="_blank"
+              aria-label="LinkedIn"
+              rel="noopener noreferrent"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="hero">
@@ -655,6 +725,7 @@
         </div>
       </section>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

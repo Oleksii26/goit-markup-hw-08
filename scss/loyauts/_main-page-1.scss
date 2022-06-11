@@ -1,7 +1,5 @@
 .hero {
   background-color: var(--accent-bg-color);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/bg/hero-bg.jpg);
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
@@ -10,6 +8,8 @@
   align-items: center;
 
   @include mq(mobile-only) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/img/bg/Header_m_img.jpg);
     max-width: 480px;
     height: 400px;
     padding-top: 118px;
@@ -17,6 +17,8 @@
   }
 
   @include mq(tablet-only) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/img/bg/Header_t_img.jpg);
     max-width: 768px;
     height: 400px;
     padding-top: 118px;
@@ -24,6 +26,8 @@
   }
 
   @include mq(desktop) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/bg/hero-bg.jpg);
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
@@ -183,6 +187,7 @@
     }
   }
   @include mq(tablet-only) {
+    width: 354px;
     &:nth-child(2n + 1) {
       margin-right: 30px;
     }
