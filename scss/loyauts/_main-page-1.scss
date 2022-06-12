@@ -6,10 +6,15 @@
   background-repeat: no-repeat;
   background-position: center;
   align-items: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/img/bg/hero_bg_m.jpg);
+
+  @include mq(retina) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/img/bg/hero_bg_m@2x.jpg);
+  }
 
   @include mq(mobile-only) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/img/bg/Header_m_img.jpg);
     max-width: 480px;
     height: 400px;
     padding-top: 118px;
@@ -18,20 +23,27 @@
 
   @include mq(tablet-only) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/img/bg/Header_t_img.jpg);
+      url(/img/bg/hero_bg_t.jpg);
     max-width: 768px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
+    @include mq(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/img/bg/hero_bg_t@2x.jpg);
+    }
   }
-
   @include mq(desktop) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/img/bg/hero-bg.jpg);
+      url(/img/bg/hero_bg_d.jpg);
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    @include mq(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/img/bg/hero_bg_d@2x.jpg);
+    }
   }
 }
 
@@ -60,14 +72,7 @@
     line-height: 1.36;
   }
 }
-.section__benefits {
-  @include mq(not-desktop) {
-    padding-top: 60px;
-  }
-  @include mq(desktop) {
-    padding-top: 94px;
-  }
-}
+
 .benefits__text {
   font-family: var(--main-font);
   font-style: normal;
@@ -104,29 +109,22 @@
 }
 
 .benefits__advantages {
-  width: 270px;
   height: 120px;
   background-color: var(--section-team-color);
   margin-bottom: 30px;
   align-items: center;
   display: flex;
   justify-content: center;
-
-  @include mq(mobile-only) {
-    width: 450px;
-  }
-  @include mq(tablet-only) {
-    width: 354px;
-  }
+  width: 100%;
 }
 
 .benefits__item {
   display: block;
-  height: 251px;
+  width: 100%;
+
   @include mq(mobile-only) {
     &:not(:last-child) {
       margin-bottom: 30px;
-      height: 226px;
     }
   }
   @include mq(tablet-only) {
@@ -153,7 +151,6 @@
   line-height: 1.17;
   color: var(--secondary-text-cl);
   letter-spacing: 0.03em;
-  margin-top: 94px;
   text-align: center;
 
   @include mq(not-desktop) {
@@ -215,6 +212,9 @@
   }
   @include mq(tablet-only) {
     display: none;
+  }
+  @include mq(desktop) {
+    margin-bottom: 94px;
   }
 }
 .about__list {
