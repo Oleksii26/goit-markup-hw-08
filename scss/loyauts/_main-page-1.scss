@@ -7,11 +7,11 @@
   background-position: center;
   align-items: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../../img/bg/hero_bg_m.jpg);
+    url(/img/bg/hero-bg-m.jpg);
 
   @include mq(retina) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/img/bg/hero_bg_m@2x.jpg);
+      url(/img/bg/hero-bg-m@2x.jpg);
   }
 
   @include mq(mobile-only) {
@@ -23,19 +23,19 @@
 
   @include mq(tablet-only) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/img/bg/hero_bg_t.jpg);
+      url(/img/bg/hero-bg-t.jpg);
     max-width: 768px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
     @include mq(retina) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/img/bg/hero_bg_t@2x.jpg);
+        url(/img/bg/hero-bg-t@2x.jpg);
     }
   }
   @include mq(desktop) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/img/bg/hero_bg_d.jpg);
+      url(/img/bg/hero-bg-d.jpg);
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
@@ -43,7 +43,7 @@
 
     @include mq(retina) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/img/bg/hero_bg_d@2x.jpg);
+        url(/img/bg/hero-bg-d@2x.jpg);
     }
   }
 }
