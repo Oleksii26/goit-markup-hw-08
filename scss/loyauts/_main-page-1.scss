@@ -27,7 +27,7 @@
 
   @include mq(desktop) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../img/bg/hero-bg.jpg);
+      url(/img/bg/hero-bg.jpg);
     max-width: 1600px;
     height: 600px;
     padding-top: 200px;
