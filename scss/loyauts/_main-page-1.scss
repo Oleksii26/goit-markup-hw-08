@@ -6,19 +6,18 @@
   background-repeat: no-repeat;
   background-position: center;
   align-items: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../img/bg/hero-bg-m.jpg);
 
-  @include mq(retina) {
+  @include mq(mobile-only) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../img/bg/hero-bg-m2x.jpg);
-  }
-
-  @include mq(mobile) {
+      url(../img/bg/hero-bg-m.jpg);
     max-width: 480px;
     height: 400px;
     padding-top: 118px;
     padding-bottom: 118px;
+    @include mq(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/bg/hero-bg-m2x.jpg);
+    }
   }
 
   @include mq(tablet-only) {
