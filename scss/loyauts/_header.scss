@@ -11,6 +11,7 @@
 }
 
 .header__navigation {
+
   @include mq(mobile-only) {
     display: none;
   }
@@ -18,6 +19,7 @@
   @include mq(tablet-only) {
     display: flex;
     margin-left: 88px;
+    align-items: center;
   }
   @include mq(desktop) {
     margin-left: 93px;
@@ -26,7 +28,9 @@
 }
 
 .header__logo-studio {
-  color: var(--color-logo);
+      color: var(--color-logo);
+
+   
 }
 .header__list {
   font-family: var(--main-font);
@@ -83,6 +87,13 @@
     @include mq(desktop) {
       margin-right: 30px;
     }
+  }
+}
+.header__link {
+
+  @include mq(not-desktop) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .header__item {
