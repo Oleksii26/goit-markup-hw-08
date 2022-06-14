@@ -667,7 +667,7 @@ img {
     background-color: var(--accent-color);
     border-radius: 2px;
     left: 0;
-    bottom: -32px;
+    bottom: 0;
   }
 }
 
@@ -792,6 +792,8 @@ img {
   height: 40px;
   z-index: 100;
   color: var(--color-logo);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header__menu-link:hover, .header__menu-link:focus {
@@ -1587,7 +1589,13 @@ img {
   width: 100%;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 479px) {
+  .catalog__description {
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .catalog__description {
     padding: 77px 24px;
   }

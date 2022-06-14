@@ -85,8 +85,12 @@
   background-color: var(--color-description);
   color: var(--main-bg-cl);
   width: 100%;
-
-  @include mq(mobile-only) {
+  
+  @media screen and (max-width: 479px) {
+    padding: 10px;
+  }
+  
+  @include mq(mobile) {
     padding: 77px 24px;
   }
 
