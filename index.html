@@ -294,7 +294,29 @@
           <h2 class="about__title">Наша команда</h2>
           <ul class="our-team__list list">
             <li class="our-team__item">
-              <img src="./img/teams/ihor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/teams/ihor.jpg 1x, ./img/teams/ihor_d_img@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/teams/ihor_t_@1.jpg 1x, ./img/teams/ihor_t_img@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/teams/ihor_m_img@1x.jpg 1x, ./img/teams/ihor_m_img@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./img/teams/ihor_m_img@1x.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="our-team__wraper">
                 <h3 class="our-team__name">Игорь Демьяненко</h3>
                 <p lang="en" class="our-team__position">Product Designer</p>
@@ -454,8 +476,13 @@
                   srcset="./img/teams/nikolay_m_img-2.jpg 1x, ./img/teams/nikolay_m_img@2x-2.jpg 2x"
                   type="image/jpg"
                 />
-              <img src="./img/teams/nikolay_m_img-2.jpg" alt="Николай Тарасов" width="270" height="260" />
-               </picture>
+                <img
+                  src="./img/teams/nikolay_m_img-2.jpg"
+                  alt="Николай Тарасов"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="our-team__wraper">
                 <h3 class="our-team__name">Николай Тарасов</h3>
                 <p lang="en" class="our-team__position">Marketing</p>
@@ -517,7 +544,29 @@
               </div>
             </li>
             <li class="our-team__item">
-              <img src="./img/teams/misha.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="./img/teams/misha.jpg 1x, ./img/teams/misha_d_img@2x-2.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./img/teams/misha_t_img-3.jpg 1x, ./img/teams/misha_t_img@2x-3.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./img/teams/misha_m_img-3.jpg 1x, ./img/teams/misha_m_img@2x-3.jpg 2x"
+                  type="image/jpg"
+                />
+                <img
+                  src="./img/teams/misha_m_img-3.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                  height="460"
+                />
+              </picture>
               <div class="our-team__wraper">
                 <h3 class="our-team__name">Михаил Ермаков</h3>
                 <p lang="en" class="our-team__position">UI Designer</p>
