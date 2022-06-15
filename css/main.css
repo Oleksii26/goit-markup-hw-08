@@ -343,22 +343,36 @@ img {
 
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--secondary-text-cl);
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 320px) {
+  .modal-title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .modal-title {
     line-height: 1.5;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .modal-title {
+    line-height: 1.5;
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal-title {
     line-height: 1.15;
+    font-size: 20px;
   }
 }
 
@@ -541,7 +555,6 @@ img {
 .modal {
   background-color: var(--main-bg-cl);
   position: absolute;
-  padding: 40px;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -551,6 +564,8 @@ img {
 @media screen and (max-width: 320px) {
   .modal {
     width: 310px;
+    height: 550px;
+    padding: 10px;
   }
 }
 
@@ -558,6 +573,7 @@ img {
   .modal {
     width: 450px;
     height: 609px;
+    padding: 40px;
   }
 }
 
@@ -565,6 +581,7 @@ img {
   .modal {
     width: 450px;
     height: 609px;
+    padding: 40px;
   }
 }
 
@@ -572,6 +589,7 @@ img {
   .modal {
     width: 528px;
     height: 581px;
+    padding: 40px;
   }
 }
 

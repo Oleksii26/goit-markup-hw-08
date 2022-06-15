@@ -1,16 +1,27 @@
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
+  
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: var(--secondary-text-cl);
 
-  @include mq(not-desktop) {
+  @media screen and (max-width: 320px) {
+    font-size: 14px;
+  }
+
+@include mq(mobile) {
     line-height: 1.5;
+    font-size: 20px;
+  }
+
+  @include mq(tablet-only) {
+    line-height: 1.5;
+    font-size: 20px;
   }
   @include mq(desktop) {
     line-height: 1.15;
+    font-size: 20px;
   }
 }
 
@@ -181,28 +192,32 @@
 .modal {
   background-color: var(--main-bg-cl);
   position: absolute;
-  padding: 40px;
-  left: 50%;
+    left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 
   @media screen and (max-width: 320px) {
     width: 310px;
+    height: 550px;
+    padding: 10px;
   }
   
 
   @include mq(mobile) {
     width: 450px;
     height: 609px;
+    padding: 40px;
   }
 
   @include mq(tablet-only) {
     width: 450px;
     height: 609px;
+    padding: 40px;
   }
   @include mq(desktop) {
     width: 528px;
     height: 581px;
+    padding: 40px;
   }
 }
 .backdrop.is-hidden {
