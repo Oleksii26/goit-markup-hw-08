@@ -164,9 +164,7 @@
   height: 40px;
   z-index: 100;
   color: var(--color-logo);
-  padding-top: 10px;
-  padding-bottom: 10px;
-  &:hover,
+    &:hover,
   &:focus {
     color: var(--accent-color);
   }
@@ -251,9 +249,13 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
   text-decoration: none;
+  @media screen and (max-width: 410px) {
+  font-size: 12px;
+}
 }
 .mobile_list-social {
-  display: flex;
+    display: flex;
+    
 }
 .mobile_link-social {
   position: relative;
@@ -269,6 +271,7 @@
       right: -10px;
     }
   }
+
 }
 .mobile_list-contact {
   margin-top: auto;

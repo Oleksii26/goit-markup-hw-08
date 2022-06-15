@@ -175,7 +175,7 @@
   background-color: var(--modal-color);
   z-index: 10;
   transition: opacity var(--modal-anim), visibility var(--modal-anim);
-z-index: 101;
+  z-index: 101;
 }
 
 .modal {
@@ -185,9 +185,13 @@ z-index: 101;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (max-width: 320px) {
+    width: 310px;
+  }
   
 
-  @include mq(mobile-only) {
+  @include mq(mobile) {
     width: 450px;
     height: 609px;
   }

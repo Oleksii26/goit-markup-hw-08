@@ -94,11 +94,7 @@
     box-shadow var(--hover-anim);
   outline: transparent;
 
-  @include mq(mobile-only) {
-    &:nth-child(-n + 4) {
-      margin-bottom: 15px;
-    }
-  }
+  
 
   @include mq(desktop) {
     &:hover,

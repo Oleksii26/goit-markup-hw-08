@@ -117,6 +117,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  border-radius: 4px;
 }
 
 .benefits__item {
@@ -203,6 +204,10 @@
 .our-team__wraper {
   padding-bottom: 30px;
   padding-top: 30px;
+
+  @include mq(not-desktop) {
+    padding-bottom: 24px;
+  }
 }
 .our-team__item .name {
   margin-bottom: 10px;
