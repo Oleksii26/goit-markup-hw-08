@@ -134,7 +134,15 @@
   margin-top: 20px;
   margin-bottom: 30px;
 
-  @include mq(not-desktop) {
+@media screen and (max-width: 320px) {
+  font-size: 9px;
+}
+
+  @include mq(mobile) {
+    font-size: 12px;
+  }
+
+  @include mq(tablet-only) {
     font-size: 12px;
     line-height: 1.16;
   }
