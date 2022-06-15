@@ -6,7 +6,7 @@
   margin-bottom: 12px;
   color: var(--secondary-text-cl);
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 479px) {
     font-size: 14px;
   }
 
@@ -134,7 +134,7 @@
   margin-top: 20px;
   margin-bottom: 30px;
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   font-size: 9px;
 }
 
@@ -204,7 +204,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 479px) {
     width: 310px;
     height: 550px;
     padding: 10px;

@@ -349,7 +349,7 @@ img {
   color: var(--secondary-text-cl);
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   .modal-title {
     font-size: 14px;
   }
@@ -492,7 +492,7 @@ img {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   .modal-form__radio {
     font-size: 9px;
   }
@@ -573,7 +573,7 @@ img {
           transform: translate(-50%, -50%);
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   .modal {
     width: 310px;
     height: 550px;
