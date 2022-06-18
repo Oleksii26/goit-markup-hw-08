@@ -164,7 +164,7 @@
   height: 40px;
   z-index: 100;
   color: var(--color-logo);
-    &:hover,
+  &:hover,
   &:focus {
     color: var(--accent-color);
   }
@@ -250,12 +250,11 @@
   color: var(--accent-color);
   text-decoration: none;
   @media screen and (max-width: 410px) {
-  font-size: 12px;
-}
+    font-size: 12px;
+  }
 }
 .mobile_list-social {
-    display: flex;
-    
+  display: flex;
 }
 .mobile_link-social {
   position: relative;
@@ -271,7 +270,6 @@
       right: -10px;
     }
   }
-
 }
 .mobile_list-contact {
   margin-top: auto;

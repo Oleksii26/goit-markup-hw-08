@@ -1,6 +1,6 @@
 .modal-title {
   font-weight: 700;
-  
+
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
@@ -10,7 +10,7 @@
     font-size: 14px;
   }
 
-@include mq(mobile) {
+  @include mq(mobile) {
     line-height: 1.5;
     font-size: 20px;
   }
@@ -134,9 +134,9 @@
   margin-top: 20px;
   margin-bottom: 30px;
 
-@media screen and (max-width: 479px) {
-  font-size: 9px;
-}
+  @media screen and (max-width: 479px) {
+    font-size: 9px;
+  }
 
   @include mq(mobile) {
     font-size: 12px;
@@ -200,7 +200,7 @@
 .modal {
   background-color: var(--main-bg-cl);
   position: absolute;
-    left: 50%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
 
@@ -209,7 +209,6 @@
     height: 550px;
     padding: 10px;
   }
-  
 
   @include mq(mobile) {
     width: 450px;
